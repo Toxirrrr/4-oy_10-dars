@@ -27,7 +27,7 @@ form.addEventListener("submit", function(event){
     
     elFormLogin.value = null
     elFormPassword.value = null
-    
+    console.clear();
 })
 // 
 function checkLogin(loginV, passwordV) {

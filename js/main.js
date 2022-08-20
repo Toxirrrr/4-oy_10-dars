@@ -4,9 +4,16 @@ if (!localStorage.getItem(`token`)) {
 
 
 
-let logOut = document.querySelector(".log__out") 
+let logOut = document.querySelector("#log__out") 
+let logOut1 = document.querySelector(".log__out1") 
 
 logOut.addEventListener("click", function () {
+    localStorage.removeItem("token")
+
+    window.location.href = "/login.html"
+})
+
+logOut1.addEventListener("click", function () {
     localStorage.removeItem("token")
 
     window.location.href = "/login.html"
